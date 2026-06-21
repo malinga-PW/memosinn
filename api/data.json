@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "proImg": "/images/product/1.jpg",
+    "title": "Deluxe Queen Room - 102",
+    "slug": "Deluxe-Queen-Room-102",
+    "price": "32",
+    "delPrice": "45",
+    "sqm": "35",
+    "bedroom": "1",
+    "bathroom": "1",
+    "capacity": "2",
+    "Children": "1"
+  },
+  {
+    "id": 2,
+    "proImg": "/images/product/2.jpg",
+    "title": "Economy Double Room - 105",
+    "slug": "Economy-Double-Room-105",
+    "price": "28",
+    "delPrice": "40",
+    "sqm": "28",
+    "bedroom": "1",
+    "bathroom": "1",
+    "capacity": "2",
+    "Children": "1"
+  },
+  {
+    "id": 3,
+    "proImg": "/images/product/3.jpg",
+    "title": "Male/Female Dormitory Room - 101",
+    "slug": "Male-Female-Dormitory-101",
+    "price": "64",
+    "delPrice": "80",
+    "sqm": "45",
+    "bedroom": "1",
+    "bathroom": "1",
+    "capacity": "4",
+    "Children": "0"
+  },
+  {
+    "id": 4,
+    "proImg": "/images/product/4.jpg",
+    "title": "Male Dormitory Room - 103",
+    "slug": "Male-Dormitory-103",
+    "price": "44",
+    "delPrice": "60",
+    "sqm": "40",
+    "bedroom": "1",
+    "bathroom": "1",
+    "capacity": "4",
+    "Children": "0"
+  },
+  {
+    "id": 5,
+    "proImg": "/images/product/5.jpg",
+    "title": "Female Dormitory Room - 104",
+    "slug": "Female-Dormitory-104",
+    "price": "44",
+    "delPrice": "60",
+    "sqm": "40",
+    "bedroom": "1",
+    "bathroom": "1",
+    "capacity": "4",
+    "Children": "0"
+  },
+  {
+    "id": 6,
+    "proImg": "/images/product/6.jpg",
+    "title": "Deluxe Queen Room with Balcony - 106",
+    "slug": "Deluxe-Queen-Room-Balcony-106",
+    "price": "36",
+    "delPrice": "50",
+    "sqm": "38",
+    "bedroom": "1",
+    "bathroom": "1",
+    "capacity": "2",
+    "Children": "1"
+  }
+]
