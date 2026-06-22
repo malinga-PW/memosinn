@@ -521,15 +521,20 @@
   .header-lang {
 	margin-right: 8px;
 
+	#google_translate_element {
+	  display: none;
+	}
+
 	.lang-select {
 	  background: transparent;
-	  border: none;
+	  border: 1px solid rgba(255,255,255,.3);
 	  color: $white;
 	  font-size: 13px;
 	  cursor: pointer;
 	  outline: none;
-	  padding: 5px;
-	  max-width: 100px;
+	  padding: 5px 8px;
+	  border-radius: 4px;
+	  max-width: 120px;
 
 	  option {
 		color: $dark-gray;
@@ -1637,6 +1642,21 @@
 
   .fixed-navbar.active .wpo-header-style-1 .shop-header{
 	background: #1a384c;
+  }
+
+  // Google Translate overrides
+  .goog-te-banner-frame.skiptranslate,
+  .goog-te-gadget-simple {
+	display: none !important;
+  }
+  .goog-te-gadget-icon {
+	display: none !important;
+  }
+  body {
+	top: 0px !important;
+  }
+  .skiptranslate {
+	display: none !important;
   }
 
 //   mobileMenu

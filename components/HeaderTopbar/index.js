@@ -18,13 +18,6 @@ const HeaderTopbar = () => {
                     <div className="col col-lg-5 col-md-4 col-sm-12 col-12">
                         <div className="contact-info">
                             <ul>
-                                <li className="language">
-                                    <select name="language" id="language">
-                                        <option value="">English</option>
-                                        <option value="">Arabic</option>
-                                        <option value="">France</option>
-                                    </select>
-                                </li>
                                 <li><Link href="/"><i className="fi flaticon-facebook-app-symbol"></i></Link></li>
                                 <li><Link href="/"><i className="fi flaticon-twitter"></i></Link></li>
                                 <li><Link href="/"><i className="fi flaticon-linkedin"></i></Link></li>

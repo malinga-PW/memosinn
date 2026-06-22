@@ -126,11 +126,12 @@ const Header = (props) => {
                       </div>
                     </div>
                     <div className="header-lang">
-                      <select className="lang-select">
+                      <div id="google_translate_element"></div>
+                      <select className="lang-select" id="lang-select">
                         <option value="en">🇬🇧 English</option>
                         <option value="fr">🇫🇷 Français</option>
                         <option value="de">🇩🇪 Deutsch</option>
-                        <option value="zh">🇨🇳 中文</option>
+                        <option value="zh-CN">🇨🇳 中文</option>
                         <option value="ja">🇯🇵 日本語</option>
                         <option value="ko">🇰🇷 한국어</option>
                         <option value="ru">🇷🇺 Русский</option>
