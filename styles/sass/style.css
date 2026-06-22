@@ -2657,7 +2657,9 @@ a.ui-button:active, .ui-button:active,
 
 @media screen and (min-width: 992px) {
   .wpo-site-header #navbar {
-    /*** hover effect ***/
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .wpo-site-header #navbar li {
     position: relative;
@@ -3064,15 +3066,82 @@ a.ui-button:active, .ui-button:active,
 }
 
 .wpo-header-style-2 {
-  position: absolute;
+  position: relative;
   left: 0;
   width: 100%;
   z-index: 999;
-  background: rgba(37, 48, 65, 0.2);
+  background: #1a2332;
+  padding: 15px 20px;
 }
 
 .wpo-header-style-2 .navigation {
-  background: transparent;
+  background: #1a2332;
+  padding: 0;
+}
+
+.wpo-header-style-2 .navbar-header {
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.wpo-header-style-2 .navbar-header .navbar-brand {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.wpo-header-style-2 .navbar-header .navbar-brand img {
+  max-height: 45px;
+  width: auto;
+  display: block;
+}
+
+.wpo-header-style-2 .container-fluid {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.wpo-header-style-2 .row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.wpo-header-style-2 .col-lg-2 {
+  flex: 0 0 auto;
+  width: 15%;
+  max-width: 15%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wpo-header-style-2 .col-lg-9 {
+  flex: 0 0 auto;
+  width: 70%;
+  max-width: 70%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.wpo-site-header .navbar-header {
+  display: block !important;
+  width: 100%;
+}
+
+.wpo-site-header .navbar-brand {
+  display: block;
+  padding: 0;
+}
+
+.wpo-site-header .navbar-brand img {
+  max-height: 50px;
+  width: auto;
+  display: block;
 }
 
 .wpo-header-style-2 .navigation.sticky-on {
@@ -3105,6 +3174,26 @@ a.ui-button:active, .ui-button:active,
   .wpo-header-style-2 {
     z-index: 99999;
   }
+}
+
+.wpo-site-header .navbar-header {
+  z-index: 999;
+  position: relative;
+  padding: 15px 0;
+  display: block !important;
+  flex-shrink: 0;
+}
+
+.wpo-site-header .navbar-header .navbar-brand {
+  display: inline-block !important;
+  padding: 0;
+  margin: 0;
+}
+
+.wpo-site-header .navbar-header .navbar-brand img {
+  max-height: 50px;
+  width: auto;
+  display: block;
 }
 
 .wpo-site-header .navigation .logo-2 {
