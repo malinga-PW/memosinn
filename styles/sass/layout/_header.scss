@@ -226,7 +226,7 @@
 	/* style for navigation less than 992px */
 	/*navbar collaps less then 992px*/
 	/*** cart-search-contact ***/
-	background-color: transparent;
+	background-color: $dark-gray;
 	position: absolute;
 	left: 0;
 	width: 100%;
@@ -535,9 +535,9 @@
   }
   .wpo-site-header .header-right .search-toggle-btn,
   .wpo-site-header .header-right .cart-toggle-btn{
-	background-color: rgba(7,1,67,.05);
+	background-color: rgba(255,255,255,.1);
 	line-height: 0.66em;
-	color: #232f4b;
+	color: $white;
 	width: 50px;
 	height: 50px;
 	border: 0;
@@ -587,7 +587,7 @@
 		.fi {
 			font-size: 30px;
 			font-size: calc-rem-value(30);
-			color: $dark-gray;
+			color: $white;
 		}
 
 		> div {
@@ -1007,7 +1007,7 @@
 				font-size: 16px;
 				padding: 35px 20px;
 				display: block;
-				color: #232f4b;
+				color: $white;
 				font-weight: 700;
 				position: relative;
 
@@ -1463,7 +1463,7 @@
 	left: 0;
 	width: 100%;
 	z-index: 999;
-	background: rgba(37,48,65,.2);
+	background: $dark-gray;
 
 	.navigation{
       background: transparent;
@@ -1509,7 +1509,7 @@
 
 .wpo-site-header .navigation.sticky-header{
 	padding:0 130px;
-	background: $white;
+	background: $dark-gray;
 
 	.logo-2{
 		display: inherit;
@@ -1581,7 +1581,7 @@
   }
 
   .fixed-navbar.active .wpo-header-style-3{
-	  background: $white;
+	  background: $dark-gray;
   }
 
   .fixed-navbar.active .wpo-header-style-1{
@@ -1608,7 +1608,7 @@
   }
 
   .fixed-navbar.active .wpo-header-style-4{
-		background: $white;
+		background: $dark-gray;
   }
 
   .fixed-navbar.active .wpo-header-style-1 .shop-header{
