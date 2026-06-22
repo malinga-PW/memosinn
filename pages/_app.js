@@ -15,46 +15,54 @@ import "slick-carousel/slick/slick-theme.css";
 import Head from "next/head";
 import { useEffect } from 'react';
 
+const langFlags = {
+  'en': '🇬🇧 ',
+  'fr': '🇫🇷 ',
+  'de': '🇩🇪 ',
+  'zh-CN': '🇨🇳 ',
+  'ja': '🇯🇵 ',
+  'ko': '🇰🇷 ',
+  'ru': '🇷🇺 ',
+  'ar': '🇦🇪 ',
+  'hi': '🇮🇳 ',
+  'es': '🇪🇸 ',
+  'it': '🇮🇹 ',
+  'nl': '🇳🇱 ',
+  'pt': '🇵🇹 ',
+};
+
 function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
-    window.googleTranslateInit = () => {
-      if (window.google && window.google.translate) {
-        new window.google.translate.TranslateElement({
-          pageLanguage: 'en',
-          includedLanguages: 'en,fr,de,zh-CN,ja,ko,ru,ar,hi,es,it,nl,pt',
-          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false,
-        }, 'google_translate_element');
-      }
+    window.googleTranslateElementInit = () => {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,fr,de,zh-CN,ja,ko,ru,ar,hi,es,it,nl,pt',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false,
+      }, 'google_translate_element');
     };
 
     const script = document.createElement('script');
-    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateInit';
+    script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
     script.async = true;
     document.body.appendChild(script);
 
-    const interval = setInterval(() => {
-      const nativeSelect = document.querySelector('.goog-te-combo');
-      const customSelect = document.getElementById('lang-select');
-      if (nativeSelect && customSelect) {
-        customSelect.addEventListener('change', function () {
-          const val = this.value;
-          if (val === 'en') {
-            const cookie = document.cookie.split(';').filter(c => c.includes('googtrans'));
-            cookie.forEach(c => { document.cookie = c.replace(/^ /, '').replace(/=.*/, '=; expires=Thu, 01 Jan 1970; path=/'); });
-            window.location.reload();
-          } else {
-            nativeSelect.value = val;
-            nativeSelect.dispatchEvent(new Event('change'));
+    const flagInterval = setInterval(() => {
+      const select = document.querySelector('.goog-te-combo');
+      if (select) {
+        Array.from(select.options).forEach(opt => {
+          const flag = langFlags[opt.value];
+          if (flag && !opt.text.startsWith(flag)) {
+            opt.text = flag + opt.text;
           }
         });
-        clearInterval(interval);
+        clearInterval(flagInterval);
       }
-    }, 500);
+    }, 300);
 
     return () => {
-      clearInterval(interval);
+      clearInterval(flagInterval);
     };
   }, []);
 

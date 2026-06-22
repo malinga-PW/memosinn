@@ -520,29 +520,45 @@
 
   .header-lang {
 	margin-right: 8px;
+	display: flex;
+	align-items: center;
 
 	#google_translate_element {
-	  display: none;
-	}
+	  select.goog-te-combo {
+		background: transparent;
+		border: 1px solid rgba(255,255,255,.3);
+		color: $white;
+		font-size: 13px;
+		cursor: pointer;
+		outline: none;
+		padding: 5px 8px;
+		border-radius: 4px;
+		max-width: 130px;
+		-webkit-appearance: none;
+		appearance: none;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='%23fff' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position: right 8px center;
+		padding-right: 24px;
 
-	.lang-select {
-	  background: transparent;
-	  border: 1px solid rgba(255,255,255,.3);
-	  color: $white;
-	  font-size: 13px;
-	  cursor: pointer;
-	  outline: none;
-	  padding: 5px 8px;
-	  border-radius: 4px;
-	  max-width: 120px;
+		option {
+		  color: $dark-gray;
+		  background: $white;
+		}
 
-	  option {
-		color: $dark-gray;
-		background: $white;
+		&:focus {
+		  outline: none;
+		}
 	  }
 
-	  &:focus {
-		outline: none;
+	  .goog-te-gadget {
+		color: transparent;
+		font-size: 0;
+		line-height: 0;
+
+		.goog-te-gadget-icon {
+		  display: none;
+		}
 	  }
 	}
   }
