@@ -517,6 +517,30 @@
 	  }
 
   }
+
+  .header-lang {
+	margin-right: 8px;
+
+	.lang-select {
+	  background: transparent;
+	  border: none;
+	  color: $white;
+	  font-size: 13px;
+	  cursor: pointer;
+	  outline: none;
+	  padding: 5px;
+	  max-width: 100px;
+
+	  option {
+		color: $dark-gray;
+		background: $white;
+	  }
+
+	  &:focus {
+		outline: none;
+	  }
+	}
+  }
   
   .wpo-site-header .header-right .header-search-form-wrapper {
 	position: relative;

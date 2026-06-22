@@ -41,7 +41,7 @@ const Header = (props) => {
                     </Link>
                   </div>
                 </div>
-                <div className="col-lg-9 col-md-1 col-1">
+                <div className="col-lg-8 col-md-1 col-1">
                   <div id="navbar" className="collapse navbar-collapse navigation-holder">
                     <button className="menu-close"><i className="ti-close"></i></button>
                     <ul className="nav navbar-nav mb-2 mb-lg-0">
@@ -107,7 +107,7 @@ const Header = (props) => {
 
                   </div>
                 </div>
-                <div className="col-lg-1 col-md-2 col-2">
+                <div className="col-lg-2 col-md-2 col-2">
                   <div className="header-right">
                     <div className="header-search-form-wrapper">
                       <div className="cart-search-contact">
@@ -124,6 +124,23 @@ const Header = (props) => {
                           </form>
                         </div>
                       </div>
+                    </div>
+                    <div className="header-lang">
+                      <select className="lang-select">
+                        <option value="en">🇬🇧 English</option>
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="de">🇩🇪 Deutsch</option>
+                        <option value="zh">🇨🇳 中文</option>
+                        <option value="ja">🇯🇵 日本語</option>
+                        <option value="ko">🇰🇷 한국어</option>
+                        <option value="ru">🇷🇺 Русский</option>
+                        <option value="ar">🇦🇪 العربية</option>
+                        <option value="hi">🇮🇳 हिन्दी</option>
+                        <option value="es">🇪🇸 Español</option>
+                        <option value="it">🇮🇹 Italiano</option>
+                        <option value="nl">🇳🇱 Nederlands</option>
+                        <option value="pt">🇵🇹 Português</option>
+                      </select>
                     </div>
                     <div className="mini-cart">
                       <button className="cart-toggle-btn" onClick={() => setcartState(!cartActive)}>
